@@ -42,7 +42,7 @@ public class Task_4_Serialize_a_Customer
 
 
         // Serialization: Writing Customers to a file
-        FileOutputStream fos = new FileOutputStream("C:\\Users\\Konstantina\\OneDrive\\Υπολογιστής\\Folders\\DATA\\JAVA\\My_Java\\Customer.txt"); // C:/MyJava/Customer.txt
+        FileOutputStream fos = new FileOutputStream("C:\\My_Java\\Customer.txt"); 
         ObjectOutputStream oos = new ObjectOutputStream(fos);
 
         oos.writeInt(list.length);
@@ -54,7 +54,7 @@ public class Task_4_Serialize_a_Customer
         fos.close();
 
         // Deserialization: Reading Customers from a file
-        FileInputStream fis = new FileInputStream("C:\\Users\\Konstantina\\OneDrive\\Υπολογιστής\\Folders\\DATA\\JAVA\\My_Java\\Customer.txt");
+        FileInputStream fis = new FileInputStream("C:\\My_Java\\Customer.txt");
         ObjectInputStream ois = new ObjectInputStream(fis);
 
         int length = ois.readInt();
