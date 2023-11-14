@@ -8,10 +8,10 @@ public class Task2_Sequence_Stream
 {
     public static void main(String[] args) throws Exception
     {
-        FileInputStream file1 = new FileInputStream("C:/Users/Konstantina/OneDrive/Υπολογιστής/Folders/DATA/JAVA/My_Java/Source1.txt");
-        FileInputStream file2 = new FileInputStream("C:/Users/Konstantina/OneDrive/Υπολογιστής/Folders/DATA/JAVA/My_Java/Source2.txt");
+        FileInputStream file1 = new FileInputStream("C:/My_Java/Source1.txt");
+        FileInputStream file2 = new FileInputStream("C:/My_Java/Source2.txt");
 
-        FileOutputStream fos = new FileOutputStream("C:/Users/Konstantina/OneDrive/Υπολογιστής/Folders/DATA/JAVA/My_Java/Destination.txt");
+        FileOutputStream fos = new FileOutputStream("C:/My_Java/Destination.txt");
 
         SequenceInputStream sis = new SequenceInputStream(file1, file2);
 
