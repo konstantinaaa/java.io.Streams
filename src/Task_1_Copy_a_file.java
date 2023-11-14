@@ -6,7 +6,7 @@ public class Task_1_Copy_a_file
 {
     public static void main(String[] args) throws Exception
     {
-        try(FileOutputStream file_output_stream = new FileOutputStream("C:/Users/Konstantina/OneDrive/Υπολογιστής/Folders/DATA/JAVA/My_Java/Source1.txt"))
+        try(FileOutputStream file_output_stream = new FileOutputStream("C:/My_Java/Source1.txt"))
         {
             String str = "JAVA PROGRAMMING LANGUAGE\nJAVA TEST FILE\nCOPY DATA FROM ONE FILE TO ANOTHER";
 
@@ -15,8 +15,8 @@ public class Task_1_Copy_a_file
         }
 
         // Provide the full path to the "Source1.txt" file.
-        java.io.FileInputStream fis = new java.io.FileInputStream("C:/Users/Konstantina/OneDrive/Υπολογιστής/Folders/DATA/JAVA/My_Java/Source1.txt"); // github "C:/My JAVA/Source1.txt"
-        FileOutputStream fos = new FileOutputStream("C:/Users/Konstantina/OneDrive/Υπολογιστής/Folders/DATA/JAVA/My_Java/Source2.txt"); // github "C:/My JAVA/Source2.txt"
+        java.io.FileInputStream fis = new java.io.FileInputStream("C:/My_Java/Source1.txt"); 
+        FileOutputStream fos = new FileOutputStream("C:/My_Java/Source2.txt"); 
 
        int b;
        while((b = fis.read())!= -1)
