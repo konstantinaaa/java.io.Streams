@@ -11,7 +11,7 @@ public class Task_3_Store_and_retrieve_float_numbers
     {
         float list[] = {10.5f, 2.9f, 6.4f, 3.7f};
 
-        FileOutputStream fos = new FileOutputStream("C:\\Users\\Konstantina\\OneDrive\\Υπολογιστής\\Folders\\DATA\\JAVA\\My_Java\\Data1.txt");
+        FileOutputStream fos = new FileOutputStream("C:\\My_Java\\Data1.txt");
         DataOutputStream dos = new DataOutputStream(fos);
 
         dos.writeInt(list.length);
@@ -23,7 +23,7 @@ public class Task_3_Store_and_retrieve_float_numbers
         dos.close();
         fos.close();
 
-        FileInputStream fis = new FileInputStream("C:\\Users\\Konstantina\\OneDrive\\Υπολογιστής\\Folders\\DATA\\JAVA\\My_Java\\Data1.txt");
+        FileInputStream fis = new FileInputStream("C:\\My_Java\\Data1.txt");
         DataInputStream dis = new DataInputStream(fis);
 
         int length = dis.readInt();
